@@ -16,6 +16,7 @@ public class MyServices extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+
         player = MediaPlayer.create(this,
                 Settings.System.DEFAULT_NOTIFICATION_URI);
         player.setLooping(true);
